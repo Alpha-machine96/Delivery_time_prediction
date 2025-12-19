@@ -24,6 +24,66 @@ This project tackles the challenge of accurately predicting food delivery times 
 - **Best Model:** Random Forest Regressor (tuned with GridSearchCV)
 
 - **Performance:** R² = 0.84, MAE = ±6.5 minutes
+  _____________________________________________________________________________________________________________________________
+## Key Features
+
+### Data Processing Pipeline
+
+- **Data Cleaning:** Handled missing values, removed duplicates, treated outliers
+
+- **Feature Engineering:** Created 40+ features including geospatial, temporal, and interaction features
+
+- **Encoding:** One-hot encoding for categorical variables, feature scaling for numerical data
+
+- **Validation:** Train-validation split with cross-validation
+
+### Machine Learning Models
+
+- **Linear Regression:** Baseline model for comparison
+
+- **Decision Tree:** Single tree with depth constraints
+
+- **Random Forest:** Ensemble of 100+ trees (best performer)
+
+- **Hyperparameter Tuning:** GridSearchCV with 3-fold cross-validation
+  ____________________________________________________________________________________________________________________________________
+ ## Dataset
+ 
+**Source:** Kaggle Food Delivery Dataset by Gaurav Malik
+
+**Size:**
+
+**Training Set:** 45,593 records
+
+**Test Set:** 19,383 records
+___________________________________________________________________________________________________________________________________________
+## Methodology
+
+### Phase 1: Data Preprocessing
+
+**1. Missing Value Treatment**
+
+- **Numerical:** Median imputation
+
+- **Categorical:** Mode imputation
+
+- **Removed:** < 1% of records with critical missing data
+
+**2. Outlier Handling**
+
+- **Detection:** IQR (Interquartile Range) method
+
+- **Treatment:** Winsorization (capping at boundaries)
+
+- Preserved data while reducing extreme values
+
+**3. Data Quality**
+   
+- Removed 0.5% duplicate records
+
+- Standardized categorical values (lowercase, stripped whitespace)
+
+- Verified data types and consistency
 
 
 
