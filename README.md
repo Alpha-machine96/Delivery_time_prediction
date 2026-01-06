@@ -115,7 +115,7 @@ Derived Features
 
 - Parameters: max_depth=10, min_samples_split=20
 
-**3.Random Forest Regressor ⭐ Selected**
+**3.Random Forest Regressor (Selected)**
 
 - Ensemble of 100+ decision trees
 
