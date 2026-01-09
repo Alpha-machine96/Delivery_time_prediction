@@ -148,11 +148,11 @@ ________________________________________________________________________________
 
 ### Model Performance Comparison
 
-| Model   | Train RMSE | 
-|  ---  | ---  |  
-| Linear Reggression |  8.23 |                                                                     
-| Decission Tree  | 7.45 |                                                                     
-| Random Forest  | 56.8 |                                                                     
+| Model   | Train RMSE | Val RMSE | Train MAE | Val MAE | Train R2 | Val R2 | 
+|  ---  | ---  |  --- | --- | --- | --- | --- | 
+| Linear Reggression |  7.232510 | 7.206090 | 5.838539 | 5.822804 | 0.401481 | 0.411056 |                                                        
+| Decission Tree  | 6.969357 | 7.181313 | 5.576709 | 5.757266 | 0.444243 | 0.415099 |                                                            
+| Random Forest  | 6.416131 | 7.145998 | 5.129313 | 5.738258 | 0.528972 | 0.420837 |                                                                     
                                                                   
 ### Key Insights
 
